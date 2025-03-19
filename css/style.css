@@ -34,5 +34,109 @@ html {
 body {
   font-size: 1.5rem;
   font-weight: 400;
+  color: var(--grey500);
   font-family: "Poppins", "Arial", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  max-width: 500px;
+  text-align: center;
+  margin: 60px 30px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0 0 20px;
+}
+
+.title span {
+  font-family: "Poppins Light";
+}
+
+.title b {
+  font-family: "Poppins Bold";
+}
+
+.items {
+  width: 100%;
+  margin: 0 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  width: 320px;
+  height: 240px;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 10px 10px hsla(212, 6%, 44%, .2);
+  position: relative;
+  border-top: 5px solid black;
+}
+
+.item:first-of-type {
+  border-color: var(--cyan);
+}
+
+.middle-items .item:first-of-type {
+  border-color: var(--red);
+}
+
+.middle-items .item:last-of-type {
+  border-color: var(--orange);
+}
+
+.item:last-of-type {
+  border-color: var(--blue);
+}
+
+.middle-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: "Poppins Bold";
+  margin-bottom: 10px;
+}
+
+.item p {
+  color: var(--grey400);
+}
+
+.image {
+  position: absolute;
+  right: 30px;
+  bottom: 45px;
+}
+
+@media screen and (min-width: 1400px) {
+  .hero {
+    margin: 110px auto 70px;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .items {
+    flex-direction: row;
+    margin: 0 auto 160px;
+  }
+  
+  .item {
+    width: 350px;
+  }
 }
